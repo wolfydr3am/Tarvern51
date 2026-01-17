@@ -1,0 +1,24 @@
+const mongoose = require('mongoose');
+
+const LinkSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    url: {
+      type: String,
+      required: true
+    },
+    category: {
+      type: String,
+      required: true
+    }
+  },
+  { timestamps: true }
+);
+
+LinkSchema.index({ title: 'text', category: 'text' });
+
+module.exports = mongoose.model('Link', LinkSchema);

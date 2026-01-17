@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #1f2224;
+  color: #eaeaea;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* SITE INFO */
+.site-info {
+  margin-bottom: 20px;
+}
+
+.site-info h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.site-info p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* LINKS */
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* LINK CARD */
+.link-card {
+  background: #2f3336;
+  color: #8a8a8a;
+  border-radius: 10px;
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LEFT */
+.link-left h3 {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 600;
+  color: #b5b5b5;
+}
+
+/* BUTTON */
+.visit-btn {
+  background: #0e0e0e;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.visit-btn:hover {
+  opacity: 0.9;
+}
+
+/* EMPTY */
+.empty-state {
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+  border: 1px dashed #444;
+  border-radius: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .link-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .visit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   TOP HIGHLIGHT BOX
+================================ */
+.highlight-box {
+  background: #25292c;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.highlight-title {
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+/* BIG GREEN */
+.all-channels {
+  font-size: 26px;
+  color: #7CFF8A;
+}
+
+/* LINKS ROW */
+.highlight-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TELEGRAM (ORANGE, MEDIUM) */
+.highlight-link.telegram {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff9f43;
+}
+
+/* MAIN LINK (SMALLER, BLUE, BOLD) */
+.highlight-link.main-link {
+  font-size: 16px;
+  font-weight: 800;
+  color: #3b82f6;
+}
+
+
+/* ===============================
+   INFORMATION BOX
+================================ */
+.info-box {
+  background: #202427;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.info-box h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.info-list a {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* ===============================
+   MOBILE REFINEMENTS
+================================ */
+@media (max-width: 640px) {
+  .all-channels {
+    font-size: 22px;
+  }
+
+  .highlight-link.telegram {
+    font-size: 16px;
+  }
+
+  .highlight-link.main-link {
+    font-size: 15px;
+  }
+}

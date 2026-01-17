@@ -1,0 +1,19 @@
+{
+  "name": "tarvern51",
+  "version": "1.0.0",
+  "description": "a link showcase website & portfolio ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthonio Cassim",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.21.0",
+    "path": "^0.12.7"
+  }
+}

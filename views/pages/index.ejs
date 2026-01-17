@@ -1,0 +1,75 @@
+<%- include('../partials/header') %>
+
+<main class="container">
+
+  <!-- SECTION 1: MAIN CHANNEL LINKS -->
+  <section class="highlight-box">
+    <h2 class="highlight-title all-channels">
+      ALL MY CHANNELS
+    </h2>
+
+    <div class="highlight-links">
+      <a class="highlight-link telegram">
+        Telegram Channel
+      </a>
+
+      <a href="#" class="highlight-link main-link">
+        Linkhere.com
+      </a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: INFORMATION -->
+  <section class="info-box">
+    <h2>Information:</h2>
+
+    <ul class="info-list">
+      <li>
+        🔔 New Telegram Channel:
+        <a href="#">Join Here</a>
+      </li>
+      <li>
+        💬 Discord Community:
+        <a href="#">Join Discord</a>
+      </li>
+      <li>
+        📌 All links are updated daily
+      </li>
+    </ul>
+  </section>
+
+  <!-- SECTION 3: NORMAL LINKS -->
+  <section class="site-info">
+    <h2>Latest Uploaded Links</h2>
+    <p>Newest links appear first. Older links load automatically.</p>
+  </section>
+
+  <section class="links-wrapper">
+
+    <% if (links.length === 0) { %>
+      <div class="empty-state">No links available</div>
+    <% } %>
+
+    <% links.forEach(link => { %>
+      <article class="link-card">
+        <div class="link-left">
+          <span class="category"><%= link.category %></span>
+          <h3><%= link.title %></h3>
+        </div>
+
+        <a
+          class="visit-btn"
+          href="<%= link.url %>"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit
+        </a>
+      </article>
+    <% }) %>
+
+  </section>
+
+</main>
+
+<%- include('../partials/footer') %>
