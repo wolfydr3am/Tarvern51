@@ -107,7 +107,7 @@ exports.smartRedirect = async (req, res) => {
   if (!link) return res.status(404).send('Link not found');
 
   res.render('pages/smart-redirect', {
-    smartUrl: 'https://rtouchingthewaterw.com?A6dBN=1235328',
+    smartUrl: 'https://tertheyhadgoneh.com?WVD5Y=1233784',
     realUrl: link.url,
     homeUrl: '/'
   });
