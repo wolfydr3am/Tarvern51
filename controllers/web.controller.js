@@ -2,7 +2,17 @@ const Link = require('../models/Link');
 
 exports.home = async (req, res) => {
   try {
-    const categories = ['OF-Models', 'Leaks-Vids', 'Amateur', 'NSFW'];
+    const categories = [
+      'OF-Models',
+      'Leaks-Vids',
+      'Amateur',
+      'Thot-Leaks',
+      'State-Snap',
+      'Bulk-Pack',
+      'Trans',
+      'NSFW'
+    ];
+
     const groupedLinks = {};
 
     // 1. Find the most recently uploaded link to determine the "active day"
@@ -28,9 +38,9 @@ exports.home = async (req, res) => {
       }).sort({ createdAt: -1 });
     }
 
-    res.render('pages/index', { 
-      groupedLinks, 
-      displayDate: startOfDay.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) 
+    res.render('pages/index', {
+      groupedLinks,
+      displayDate: startOfDay.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
     });
 
   } catch (error) {

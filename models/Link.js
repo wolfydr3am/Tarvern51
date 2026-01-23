@@ -18,7 +18,16 @@ const LinkSchema = new mongoose.Schema(
     category: {
       type: String,
       required: true,
-      enum: ['OF-Models', 'Leaks-Vids', 'Amateur', 'NSFW'],
+      enum: [
+        'OF-Models',
+        'Leaks-Vids',
+        'Amateur',
+        'Thot-Leaks',
+        'State-Snap',
+        'Bulk-Pack',
+        'Trans',
+        'NSFW'
+      ],
       default: 'NSFW',
       trim: true
     }
