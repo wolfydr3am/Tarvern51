@@ -72,6 +72,13 @@ section {
   text-transform: uppercase;
 }
 
+.highlight-box p {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
 .highlight-links {
   display: flex;
   justify-content: center;

@@ -1,5 +1,112 @@
-<footer>
-  <p>© 2026 Tavern51 NSFW</p>
+<style>
+  footer.tavern-footer {
+    background: #0e0e0e;
+    border-top: 1px solid #1f1f1f;
+    padding: 32px 16px;
+    margin-top: 60px;
+    color: #969696;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .tavern-footer .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+  }
+
+  .tavern-footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tavern-footer .brand {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .tavern-footer .footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .tavern-footer .footer-links a {
+    color: #969696;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .tavern-footer .footer-links a:hover {
+    color: #ffffff;
+  }
+
+  .tavern-footer .footer-legal {
+    font-size: 13px;
+    color: #7a7a7a;
+  }
+
+  .tavern-footer .footer-legal strong {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+
+  .tavern-footer .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #6f6f6f;
+    border-top: 1px solid #1f1f1f;
+    padding-top: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .tavern-footer .footer-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<footer class="tavern-footer">
+  <div class="footer-container">
+
+    <div class="footer-top">
+      <div class="brand">Tavern51</div>
+
+      <nav class="footer-links">
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/dmca">DMCA</a>
+        <a href="https://t.me/LA_TAVERNE_51" target="_blank" rel="noopener noreferrer nofollow">
+          Telegram
+        </a>
+      </nav>
+    </div>
+
+    <div class="footer-legal">
+      <p>
+        <strong>18+ Adult Only:</strong> Tavern51 is an adult-oriented link directory.
+        We do not host, store, or upload any media files on our servers.
+        All content is provided by third-party websites and communities.
+      </p>
+
+      <p>
+        Tavern51 is not affiliated with, endorsed by, or responsible for any external content.
+        If you believe your copyrighted work is referenced improperly,
+        please submit a DMCA request for prompt review.
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Tavern51 · All rights reserved
+    </div>
+
+  </div>
 </footer>
 
 </body>
